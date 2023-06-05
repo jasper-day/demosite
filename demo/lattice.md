@@ -10,5 +10,5 @@ All the information there is stored in Crystallographic Information Files ([CIF]
 This information can be embedded on a webpage using [**JSmol**](https://wiki.jmol.org/index.php/Jmol_PHP):
 
 <script type="text/javascript" 
-src="http://chemapps.stolaf.edu/jmol/jmol.php?model=acetone&inline">
+src=" https://chemapps.stolaf.edu/jmol/jmol.php?model=acetone">
 </script>
