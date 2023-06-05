@@ -19,4 +19,4 @@ date: 2023.06.05
 
 - Learn new website development techniques and apply standards for documentation
 - Apply coding and automation skills (bash and python) to reduce repetitive work
--　Practice making efficient and lasting designs for the physical library itselｆ
+- Practice making efficient and lasting designs for the physical library itself
