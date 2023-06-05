@@ -15,8 +15,8 @@ This information can be embedded on a webpage using [**JSmol**](https://wiki.jmo
 <script type="text/javascript">
     window.addEventListener("DOMContentLoaded", function () {
         var jmolApplet = Jmol.getApplet("jmolApplet", {
-            width: 40vw,
-            height: 40vw,
+            width: "40vw",
+            height: "40vw",
             serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
             j2sPath: "https://chemapps.stolaf.edu/jmol/jsmol/j2s",
             script: "load inline https://www.crystallography.net/cod/4313209.cif@201982",
