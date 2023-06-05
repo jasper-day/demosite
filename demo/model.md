@@ -10,4 +10,11 @@ This page demonstrates in-browser 3D rendering using the html `<model-viewer>` t
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
 
 <!-- Use it like any other HTML element -->
-<model-viewer alt="The MatLib logo" src="assets/matliblogo.glb" ar shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+
+<style>
+model-viewer {
+    width: 50vw;
+    height: 30vw;
+}
+</style>    
+<model-viewer alt="The MatLib logo" src="../assets/matliblogo.glb" ar shadow-intensity="1" camera-controls auto-rotate touch-action="pan-y"></model-viewer>
