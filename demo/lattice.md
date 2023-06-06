@@ -52,9 +52,16 @@ This information can be embedded on a webpage using [**JSmol**](https://wiki.jmo
 
 <span id=mydiv></span>
 
+[Face Centered Cubic][3]
+[3]:javascript:Jmol.script(jmolApplet0, 'load ../assets/9008469.cif {444 666 1} + Display 555')
+
+[Body Centered Cubic][4]
+[4]:javascript:Jmol.script(jmolApplet0, 'load ../assets/5000217.cif {444 666 1} + Display 555')
+
 
 [spin on (MD, fixed?)][1]
 [1]:javascript:Jmol.script(jmolApplet0, 'spin on')
 
 [spin off (MD, fixed?)][2]
 [2]:javascript:Jmol.script(jmolApplet0, 'spin off')
+
