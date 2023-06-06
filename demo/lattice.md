@@ -43,6 +43,8 @@ This information can be embedded on a webpage using [**JSmol**](https://wiki.jmo
 </script>
 
 <span id=mydiv></span>
-<a href="javascript:Jmol.script(jmolApplet0, 'spin on')">spin on</a>
 
-<a href="javascript:Jmol.script(jmolApplet0, 'spin off')">spin off</a>
+
+[spin on (MD)](javascript:Jmol.script(jmolApplet0, 'spin on'))
+
+[spin off (MD)](javascript:Jmol.script(jmolApplet0, 'spin off'))
