@@ -9,19 +9,23 @@ All the information there is stored in Crystallographic Information Files ([CIF]
 
 This information can be embedded on a webpage using [**JSmol**](https://wiki.jmol.org/index.php/Jmol_PHP):
 
-<div id="jsmolApplet"></div>
+<div id="JmolDiv" style="width: 30vw, height: 30vw"></div>
 
 <script type="text/javascript" src="../jsmol/jsmol/JSmol.min.js"></script>
 
 <script type="text/javascript">
-    window.addEventListener("DOMContentLoaded", function () {
-        var Info = {
-            width: 500,
-            height: 400,
-            serverURL: "../jsmol/jsmol/php/jsmol.php",
-            j2sPath: "../jsmol/jsmol/j2s",
-            script: "load DATA https://www.crystallography.net/cod/4313209.cif@201982",
-        };
-        Jmol.getApplet("jsmolApplet", Info)
-    });
+    var myJmol = 'myJmol';
+    var Info = {
+        width: "100%",
+        height: "100%",
+        color: "#FFFFFF",
+        serverURL: "../jsmol/jsmol/php/jsmol.php",
+        j2sPath: "../jsmol/jsmol/j2s",
+        script: "load DATA https://www.crystallography.net/cod/4313209.cif@201982",
+    }
+    $(document).ready(function(){
+        Jmol.script(myJmol, 'load ../model/caffeine.xyz');
+        $('#JmolDiv').html( Jmol.getAppletHtml(myJmol, Info) );
+        });
+        
 </script>
