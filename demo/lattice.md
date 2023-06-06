@@ -14,8 +14,11 @@ This information can be embedded on a webpage using [**JSmol**](https://wiki.jmo
 <script type="text/javascript" src="../lib/jsmol/JSmol.min.js"></script>
 
 <script type="text/javascript"> 
-    $(document).ready(function() { 
     
+    $(document).ready(function() { 
+    /*
+    $$
+    */
     Info = {
     	width: 400,
     	height: 400,
@@ -24,15 +27,17 @@ This information can be embedded on a webpage using [**JSmol**](https://wiki.jmo
     	color: "0xC0C0C0",
       disableJ2SLoadMonitor: true,
       disableInitialConsole: true,
-    	addSelectionOptions: true,
+    	// addSelectionOptions: true,
     	serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
     	use: "HTML5",
     	readyFunction: null,
-    	script: "load $caffeine"
+    	script: "load ../assets/5000217.cif {444 666 1}"
     }
     
     $("#mydiv").html(Jmol.getAppletHtml("jmolApplet0",Info)) 
-    
+    /*
+    $$
+    */
     });
     
 </script>
