@@ -21,10 +21,10 @@ This information can be embedded on a webpage using [**JSmol**](https://wiki.jmo
         color: "#FFFFFF",
         serverURL: "../jsmol/jsmol/php/jsmol.php",
         j2sPath: "../jsmol/jsmol/j2s",
-        script: "load https://www.crystallography.net/cod/4313209.cif@201982 {1,1,1}",
+        // script: "load https://www.crystallography.net/cod/4313209.cif@201982 {1,1,1}",
     }
     $(document).ready(function(){
-        Jmol.script(myJmol, 'load ../model/caffeine.xyz');
+        Jmol.script(myJmol, 'load https://www.crystallography.net/cod/4313209.cif@201982');
         $('#JmolDiv').html( Jmol.getAppletHtml(myJmol, Info) );
         });
         
