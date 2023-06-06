@@ -11,22 +11,33 @@ Test: [simple](simple.md)
 
 This information can be embedded on a webpage using [**JSmol**](https://wiki.jmol.org/index.php/Jmol_PHP):
 
-<div id="JmolDiv" style="width: 30vw, height: 30vw"></div>
+<script type="text/javascript" src="../lib/jsmol/JSmol.min.js"></script>
 
-<script type="text/javascript" src="lib/jsmol/JSmol.min.js"></script>
-
-<script type="text/javascript">
-    var myJmol = 'myJmol';
-    var Info = {
-        width: "100%",
-        height: "100%",
-        color: "#FFFFFF",
-        j2sPath: "lib/jsmol/j2s",
-        script: "load ./assets/5000217.cif {444,555,666}",
+<script type="text/javascript"> 
+    $(document).ready(function() { 
+    
+    Info = {
+    	width: 400,
+    	height: 400,
+    	debug: false,
+    	j2sPath: "../lib/jsmol/j2s",
+    	color: "0xC0C0C0",
+      disableJ2SLoadMonitor: true,
+      disableInitialConsole: true,
+    	addSelectionOptions: true,
+    	serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
+    	use: "HTML5",
+    	readyFunction: null,
+    	script: "load $caffeine"
     }
-    $(document).ready(function(){
-        Jmol.script(myJmol, "load ./assets/5000217.cif");
-        $('#JmolDiv').html( Jmol.getAppletHtml(myJmol, Info) );
-        });
-        
+    
+    $("#mydiv").html(Jmol.getAppletHtml("jmolApplet0",Info)) 
+    
+    });
+    
 </script>
+
+<span id=mydiv></span>
+<a href="javascript:Jmol.script(jmolApplet0, 'spin on')">spin on</a>
+
+<a href="javascript:Jmol.script(jmolApplet0, 'spin off')">spin off</a>
