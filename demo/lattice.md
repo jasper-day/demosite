@@ -5,7 +5,13 @@ title: Lattice 3D Model
 
 There is a massive, open-source [repository of crystal information called the COD](https://www.crystallography.net/cod/browse.html), but it seems like a decent amount of work would need to be done to turn the models mosted there into something that would be instantly useful to a student using the MatLib website.
 
-All the information there is stored in Crystallographic Information Files ([CIF](https://en.wikipedia.org/wiki/Crystallographic_Information_File)) which contain the dimensions and angles of a unit cell of the crystal (but this is confusing, and it seems like most of the results are for complicated research crystals!)
+In particular:
+
+- Create web tooling to allow easy phone interfacing to JSmol (displaying default as unit cell, making common commands into buttons)
+- Write scripts to make it easier to actually find the desired crystal (SQL querying and hand search is *not* going to cut it for 100s of materials!)
+
+
+All the information there is stored in Crystallographic Information Files ([CIF](https://en.wikipedia.org/wiki/Crystallographic_Information_File)), which can be directly read by JSmol. All you have to do is direct JSmol to display the right crystal!
 
 Test: [simple](simple.md)
 
