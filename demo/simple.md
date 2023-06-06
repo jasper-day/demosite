@@ -2,7 +2,7 @@
 title: Super simple JSmol
 ---
 
-<script type="text/javascript" src="JSmol.min.js"></script>
+<script type="text/javascript" src="../lib/jsmol/JSmol.min.js"></script>
 
 <script type="text/javascript"> 
 $(document).ready(function() { 
