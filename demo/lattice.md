@@ -33,7 +33,7 @@ This information can be embedded on a webpage using [**JSmol**](https://wiki.jmo
     	j2sPath: "../lib/jsmol/j2s",
     	color: "0xEEEEEE",
       disableJ2SLoadMonitor: true,
-      disableInitialConsole: true,
+      disableInitialConsole: false,
     	// addSelectionOptions: true,
     	serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
     	use: "HTML5",
@@ -52,16 +52,13 @@ This information can be embedded on a webpage using [**JSmol**](https://wiki.jmo
 
 <span id=mydiv></span>
 
-[Face Centered Cubic][3]
-[3]:javascript:Jmol.script(jmolApplet0, 'load ../assets/9008469.cif {444 666 1} + Display 555')
+<a href="javascript:Jmol.script(jmolApplet0, 'load ../assets/9008469.cif {444 666 1} + Display 555')">Face Centered Cubic</a>
 
-[Body Centered Cubic][4]
-[4]:javascript:Jmol.script(jmolApplet0, 'load ../assets/5000217.cif {444 666 1} + Display 555')
+<a href="javascript:Jmol.script(jmolApplet0, 'load ../assets/5000217.cif {444 666 1} + Display 555')">Body Centered Cubic</a>
 
 
-[spin on (MD, fixed?)][1]
-[1]:javascript:Jmol.script(jmolApplet0, 'spin on')
 
-[spin off (MD, fixed?)][2]
-[2]:javascript:Jmol.script(jmolApplet0, 'spin off')
+<a href="javascript:Jmol.script(jmolApplet0, 'spin on')">spin on (MD, fixed?)</a>
+
+<a href="javascript:Jmol.script(jmolApplet0, 'spin off')">spin off (fixed??)</a>
 
