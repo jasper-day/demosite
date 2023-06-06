@@ -11,15 +11,15 @@ This information can be embedded on a webpage using [**JSmol**](https://wiki.jmo
 
 <div id="jsmolApplet"></div>
 
-<script type="text/javascript" src="https://chemapps.stolaf.edu/jmol/jsmol/JSmol.min.js"></script>
+<script type="text/javascript" src="../jsmol/jsmol/JSmol.min.js"></script>
 
 <script type="text/javascript">
     window.addEventListener("DOMContentLoaded", function () {
-        var info = {
+        var Info = {
             width: 500,
             height: 400,
-            serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
-            j2sPath: "https://chemapps.stolaf.edu/jmol/jsmol/j2s",
+            serverURL: "../jsmol/jsmol/php/jsmol.php",
+            j2sPath: "../jsmol/jsmol/j2s",
             script: "load DATA https://www.crystallography.net/cod/4313209.cif@201982",
         };
         Jmol.getApplet("jsmolApplet", Info)
