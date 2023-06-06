@@ -23,6 +23,7 @@ This information can be embedded on a webpage using [**JSmol**](https://wiki.jmo
     
     $(document).ready(function() { 
     /*
+    })
     $$
     */
     Info = {
@@ -30,19 +31,20 @@ This information can be embedded on a webpage using [**JSmol**](https://wiki.jmo
     	height: 400,
     	debug: false,
     	j2sPath: "../lib/jsmol/j2s",
-    	color: "0xC0C0C0",
+    	color: "0xEEEEEE",
       disableJ2SLoadMonitor: true,
       disableInitialConsole: true,
     	// addSelectionOptions: true,
     	serverURL: "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
     	use: "HTML5",
     	readyFunction: null,
-    	script: "load ../assets/5000217.cif {444 666 1}"
+    	script: "load ../assets/5000217.cif {444 666 1} + Display 555"
     }
     
     $("#mydiv").html(Jmol.getAppletHtml("jmolApplet0",Info)) 
     /*
     $$
+    ({ pay no attention to the man behind the curtain
     */
     });
     
@@ -51,6 +53,8 @@ This information can be embedded on a webpage using [**JSmol**](https://wiki.jmo
 <span id=mydiv></span>
 
 
-[spin on (MD)](javascript:Jmol.script(jmolApplet0, 'spin on'))
+[spin on (MD, fixed?)][1]
+[1]:javascript:Jmol.script(jmolApplet0, 'spin on')
 
-[spin off (MD)](javascript:Jmol.script(jmolApplet0, 'spin off'))
+[spin off (MD, fixed?)][2]
+[2]:javascript:Jmol.script(jmolApplet0, 'spin off')
