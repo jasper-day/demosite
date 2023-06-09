@@ -35,3 +35,13 @@ All options open-source.
         - Fewer options than Quarto
         - Not as pretty or customizable
         - Overkill (in my opinion, of course)
+4. [**Grav**](http://68.183.46.43:8080)
+    - Pros:
+        - Files stored as Markdown locally on the machine
+        - Easy to set up
+        - Highly customizable online interface allows online content generation, like WikiJS
+        - Extensible with plugins to display 3D models, JSmol, etc etc etc
+        - More functionality than a static website like Quarto
+        - No database
+    - Cons:
+        - No database (if that's a con for you)
