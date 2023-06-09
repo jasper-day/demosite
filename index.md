@@ -9,7 +9,7 @@ This is a demonstration website meant to show the possibilities of
 - Static site generation with Github markdown (the simplest method)
 - Cross linking and referencing
 
-# The demonstration website has moved: go to http://jday.systems
+# The demonstration website has moved: go to [jday.systems](https://jday.systems)
 
 [Comparison of different site generators](comparisons/overview.md)\
 [My goals and thoughts for the MatLib project](thoughts/goals.md)\
